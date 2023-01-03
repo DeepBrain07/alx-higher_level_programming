@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def uppercase(str):
     for w in str:
-        var = ord(w) - 32
-        printf("{}".format(chr(var)), end="")
+        if ord(w) > 90:
+            var = ord(w) - 32
+            print("{}".format(chr(var)), end="")
     print("")
