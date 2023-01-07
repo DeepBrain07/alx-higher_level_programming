@@ -3,8 +3,8 @@ def max_integer(my_list=[]):
     if len(my_list) == 0:
         return (None)
     list_cp = []
-    for l in my_list:
-        list_cp.append(l)
+    for v in my_list:
+        list_cp.append(v)
     for i in range(len(my_list)):
         for j in range(len(list_cp)):
             if my_list[i] < list_cp[j]:
