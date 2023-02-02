@@ -50,6 +50,6 @@ class Rectangle:
     def __str__(self):
         """ presents a diagram of the rectangle """
         rectangle = ""
-        for in in range(self.__height):
+        for in range(self.__height):
             rectangle += ("#" * self.__width) + '\n'
         return rectangle[:-1]
