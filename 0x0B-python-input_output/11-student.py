@@ -17,6 +17,12 @@ class Student:
         if type(attrs) == list:
             for key in attrs:
                 if key in self.__dict__:
-                    myDict[key] = self.__dict__[key]
+                    myDict[word] = self.__dict__[key]
             return myDict
+        return self.__dict__
+
+    def reload_from_json(self, json):
+        """ replaces all attributes of the Student instance """
+        for key in json:
+            self.__dict__[key] = json[key]
         return self.__dict__
