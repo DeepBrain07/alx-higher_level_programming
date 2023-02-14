@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """ This module defines the class Square """
-Rectangle = __import__("rectangle").Rectangle
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
