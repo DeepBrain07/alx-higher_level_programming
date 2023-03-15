@@ -51,5 +51,5 @@ class Square(Rectangle):
         for key in attr_list:
             myDict[key] = getattr(self, key)
             if key == 'size':
-                myDict[key] = getattr(self,'width')
+                myDict[key] = getattr(self, 'width')
         return myDict
