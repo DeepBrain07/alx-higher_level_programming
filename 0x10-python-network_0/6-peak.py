@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-""" This function finds a peak in a list of unsorted integers """
+""" This module defines function finds a peak in a list of unsorted integers """
 
 
 def find_peak(list_of_integers):
+    """ This function finds a peak in a list of unsorted integers """
     length = len(list_of_integers)
     if length < 1:
         peak = None
